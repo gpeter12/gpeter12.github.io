@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Shared Table GYIK</title>
+        <link rel="stylesheet" type="text/css" href="st.css">
+    </head>
+    <body>
+        <nav>
+                <a href="index.html">Főoldal</a>
+                <a id="actPage" href="faq.html">GYIK</a>
+                <a href="download.html">Letöltés</a>
+                <a href="errorReport.html">Hibajelentés/észrevételek</a>
+                <a href="https://github.com/gpeter12/sharedtable">GitHub</a>
+        </nav>
+        <br><br><br><br><br>
+
+        <article>
+            <h1>Hogyan kezdjem el használni az alkalmazást?</h1>
+            <p>
+                Két kliens között kétféleképen jöhet létre közvetlen kapcsolat.
+            </p>
+            <ol>
+                <li> A kliensed fogadja egy másik kliens csatlakozási kérelmét.</li>
+                <li> A kliensed csatlakozik egy az ő kapcsolatát elfogadni képes másik klienshez.</li>
+            </ol>
+            <p>
+                Az első esetben a <b>Menüsor→Hálózat→Bejövő kapcsolatok engedélyezése</b> menüt kell választani, 
+                majd az ott megjelenő linket valamilyen csatornán továbbítani a becsatlakozó félnek, 
+                majd várni a kapcsolatra. Ha a kapcsolat létrejön, az általa hozott vászon a szinkronizáció 
+                során megjelenik a hálózati vásznak között, és már rajzolgathattok is.
+            </p>
+            <p>
+                A második esetben el kell kérni a hálózat egy tagjától a kapcsolódási 
+                linket, illetve jelszót (ha van hálózati jelszó, <b>alapesetben nincsen jelszó</b>). Majd beírni a csatlakozási 
+                ablakba, melyet a fenti <b>Menüsor→Hálózat→Kapcsolódás más klienshez</b> menüből lehet megnyitni. 
+                Ha a csatlakozás sikeres, megjelennek + a hálózati vásznak, és nem jelenik meg hibaüzenet.
+            </p>
+        </article>    
+        <article>
+            <h1>Mi az az UPnP?</h1>
+            <p>
+                Az Universal Plug and Play vagy <b>UPnP</b> a számítógépes hálózati protokollok egy csoportja, 
+                amelynek célja, hogy különféle eszközök egyszerűen, külön konfiguráció nélkül csatlakoztathatóak 
+                legyenek egy hálózathoz.
+            </p>
+            <p>
+                A <b>Shared Table</b> esetében az otthoni router külső IP címének felderítésére, és automatikus port-forwarding beállításához 
+                van felhasználva. A router tűzfala ugyanis minden a géped felé bejövő kapcsolatot alapból blokkol. Viszont ahhoz 
+                hogy két kliens között létrejöjjön a kapcsolat szükséges legalább az egyik félnek felvennie a kapcsolatot fogadó kliens szerepét. 
+                Ehhez (szigorúan a szoftver futásának idejére) a program megkéri a routert, hogy nyissa meg a <b>23243, és 23244-es portokat</b>. Amennyiben 
+                ez nem sikerül, csak úgy lehet a peer-to-peer hálózat része, ha más klienshez csatlakozik, vagy manuálisan te 
+                nyitod meg az előbbi portot a router operációs rendszerén keresztül, amit jellemezően böngészőben megnyitható felületen 
+                érsz el a belső hálózaton. 
+                Ezután remélhetőleg képes leszel Te beengedni másokat a hálózatba.
+                Ennél több segítséget ehhez sajnos nem tudok adni, mert minden routerbe máshogy kell belépni, és máshogy kell beállítani.
+            </p>
+            <p>
+                Ha be tudsz lépni a routerbe, de nem tudod beállítani manuálisan a port-forwardingot, akkor az UPnP engedélyezésével a routeren 
+                még mindig megoldhatod a problémát.
+            </p>
+        </article>
+
+        
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <table>
+                <tr>
+                    <p>email: <a href="mailto:gpeter12@student.elte.hu">gpeter12@student.elte.hu </a></p>
+                </tr>
+             </table>
+        </footer>
+    </body>
+</html>

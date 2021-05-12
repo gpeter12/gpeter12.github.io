@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Shared Table főoldal</title>
+        <link rel="stylesheet" type="text/css" href="st.css">
+    </head>
+    <body>
+        <nav>
+                <a id="actPage" href="index.html">Főoldal</a>
+                <a href="faq.html">GYIK</a>
+                <a href="download.html">Letöltés</a>
+                <a href="errorReport.html">Hibajelentés/észrevételek</a>
+                <a href="https://github.com/gpeter12/sharedtable">GitHub</a>
+        </nav>
+        <br><br><br><br><br>
+
+            
+        <article>
+            
+                <h1>A Shared Table-ről</h1>
+                <p>A Shared Table egy <b>szakdolgozati projekt</b>, jelenleg még erősen beta fázisban. A projekt célja, egy több falhasználós
+                    (ha úgy tetszik <b>multiplayer</b>/kooperatív :D) Microsoft Paint megvalósítása lenne. Több kliens összekapcsolódhat, és 
+                    együtt <b>rajzolhat</b> teljesen egyidőben egyazon vászonra. Szúrhatnak be képeket alakzatokat stb. stb... 
+                    Azért tettem fel ide, mert arra gondoltam, hogy így, hogy csak 
+                    távolról tanulhatnak együtt a hallgatók lehet hogy hasznos eszköz lehet annak aki nem talál ennél 100x jobb alternatívát :D
+                </p>
+                <p>
+                    Előnye az alkalmazásnak, hogy <b>Hybrid Peer-to-Peer</b> hálózatokon működik, amik magukból az összekapcsolódó kliensekből 
+                    állnak. Ha egy kieső kliens miatt megszakad a kapcsolat a fa több részével, képes a fa újrastruktúrálni magát.
+                    <b>Nem kell regisztálni</b>, mivel asztali alkalmazás, ezért <b>viszonylag gyorsan fut</b> (a webappokhoz képest).
+                    Nincsen adatrögzítés, (leszámítva a automatikus loggolást helyi gépen, ami az esetleges hibajelentésekhez kell).
+                </p>
+                <p>
+                    Mint már említettem, még nincs kész, így <b>random bugok előjöhetnek</b>, de frissítésekkel igyekszek folyamatosan
+                    javítani a helyzeten. :)
+                </p>
+                <p>
+                    Szívesen veszem a visszajelzéseket, sőt rendkívül örülnék nekik... A hibajelentésről majd <a>itt</a> olvashatsz többet.
+                </p>
+                <p>
+                    Ha kedved kapnál hogy kipróbáld, <a href="download.html">itt</a> letöltheted!
+                </p>
+
+        </article>
+        
+        <article>
+                <h1>Funkciók</h1>
+                <ul>
+                    <li>Többfelhasználós egyidőben való rajzolás</li>
+                        <ul>
+                            <li>Folytonos vonal</li>
+                            <li>Egyenlőszárú háromszög</li>
+                            <li>Téglalap</li>
+                            <li>Ellipszis</li>
+                            <li>Kép beszúrás vágólapról</li>
+                            <li>Kép beszúrás fájlból</li>
+                        </ul>
+                    <li>Munka egyszerre több vásznon</li>
+                    <li>Hálózat jelszavas védelme</li>
+                    <li>Becsatlakozó kliens automatikus szinkronba hozása a hálózat többi node-jával</li>
+                    <li>Állapot alapú visszavonás, és visszavonás viszavonása (redo)</li>
+                    <li>Vonal szín/vastagság változtatása</li>
+                    <li>Radír</li>
+                    <li>Hálózati chat</li>
+                    <li>UPnP alapú automatikus port-forwarding (amelyik routeren ez engedélyezett/támogatott)</li>
+                    <li>Kliens pingelése</li>
+                </ul>
+        </article>
+
+        <article>
+            <h1>A Shared Table képekben</h1>
+            <table>
+                <tr>
+                    <td width="624" height="488"><a href="imgs/mainWindow.png"><img src="imgs/mainWindow.png" alt="fő alblak"></a></td>
+                </tr>
+                <tr>
+                    <td width="624" height="488">
+                        <p><u>UPDATE:</u> A videó végén a hiba már javítva!</p>
+                        <video width="624" height="488" controls>
+                        <source src="imgs/demo.webm" type="video/webm">
+                        <source src="imgs/demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></td>
+                </tr>
+                <tr>
+                    <td width="624" height="488"><a href="imgs/connectWindow.png"><img src="imgs/connectWindow.png" alt="kapcsolódási ablak"></a></td>
+                </tr>
+                <tr>
+                    <td width="624" height="488"><a href="imgs/manyWindow.png"><img src="imgs/manyWindow.png" alt="több ablak"></a></td>
+                </tr>
+                
+                
+                
+            </table>
+            
+        </article>
+        <footer>
+            <table>
+                <tr>
+                    <p>email: <a href="mailto:gpeter12@student.elte.hu">gpeter12@student.elte.hu </a></p>
+                </tr>
+             </table>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Shared Table Hibajelentés/észrevételek</title>
+        <link rel="stylesheet" type="text/css" href="st.css">
+        <script src="validateReport.js"></script>
+    </head>
+    <body>
+        <nav>
+                <a href="index.html">Főoldal</a>
+                <a  href="faq.html">GYIK</a>
+                <a href="download.html">Letöltés</a>
+                <a id="actPage" href="errorReport.html">Hibajelentés/észrevételek</a>
+                <a href="https://github.com/gpeter12/sharedtable">GitHub</a>
+        </nav>
+        <br><br><br><br><br>
+
+        <article>
+            <h1>Tudnivalók hibajelentés előtt</h1>
+            <p>
+                A kapcsolat nincs TLS-el titkosítva, szóval a hibajelntésben ne adj meg semmilyen személyes adatot (amúgy sem kellene).
+                Egyébként biztonságban vagy.
+            </p>
+            <p>
+                Köszönöm hogy segítesz továbbfejleszteni a projektet. :) 
+                Engedd meg, hogy adjak néhány tippet a hasznos hibajelentés megírásához.
+            </p>
+            <p>
+                Írd le a környezet amiben az alkalmazást használod: Operációs rendszer verzióval, 
+                a Shared Table verziója, a letöltés fajtája amit az oldalon választottál 
+                (pl. installer, zippelt, vagy deb package).
+            </p>
+            <p>
+                Írd le a hibát, lehetőleg úgy, hogy precíz lépéseket adsz a reprodukálásához. Írd le, hogy 
+                milyen reakciót vártál attól amit a programmal csináltál, és azt is, hogy mit kaptál helyette.
+            </p>
+
+            <p>
+                Köszi! :)
+            </p>
+        </article>
+            
+        <form action="reportExec.php" method="POST" onsubmit="return validateForm()">
+            <p>Hiba leírása:</p>
+            <textarea rows="30" cols="80" id="errorDescription" type="text" name="errorDescription" required placeholder="Hiba leírása"></textarea><br>
+            <p>Ide másold be a logfile tartalmát. Windows esetén a helye C:\Users\[username]\AppData\Local\SharedTable<br>
+                Linux esetén /home/[username]/.config/SharedTable</p>
+            <textarea rows="30" cols="80" type="text" name="errorLog" id="errorLog" required placeholder="logfile tartalma bemásolva"></textarea><br>
+            <input  class="button" id="subButton" type="Submit" value="Jelentés beküldése">
+        </form>
+        
+    
+        <footer>
+            <table>
+                <tr>
+                    <p>email: <a href="mailto:gpeter12@student.elte.hu">gpeter12@student.elte.hu </a></p>
+                </tr>
+             </table>
+        </footer>
+    </body>
+</html>
